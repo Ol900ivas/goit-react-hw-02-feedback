@@ -9,12 +9,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
   color: rgb(29, 20, 9);
-  background-color: rgb(100, 75, 48);
-  background-image: linear-gradient(
+  /* background-color: rgb(100, 75, 48); */
+  /* background-image: linear-gradient(
       rgba(247, 196, 142, 0.3),
       rgba(247, 196, 142, 0.3)
     ),
-    url(./coffee.jpg);
+    url(./coffee.jpg); */
 
   background-repeat: no-repeat;
 }
