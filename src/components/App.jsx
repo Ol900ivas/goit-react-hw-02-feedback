@@ -1,8 +1,8 @@
 import { Component } from 'react';
-import { Section } from './Section/Section.jsx';
-import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions.jsx';
-import { Notification } from './Notification/Notification.jsx';
-import { Statistics } from './Statistics/Statistics.jsx';
+import { Section } from './Section/Section';
+import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
+import { Notification } from './Notification/Notification';
+import { Statistics } from './Statistics/Statistics';
 
 export class App extends Component {
   state = {
@@ -31,18 +31,7 @@ export class App extends Component {
   render() {
     const { good, neutral, bad } = this.state;
     return (
-      <div
-        style={
-          {
-            // height: '100vh',
-            //   display: 'flex',
-            //   justifyContent: 'center',
-            //   alignItems: 'center',
-            //   fontSize: 40,
-            //   color: '#010101',
-          }
-        }
-      >
+      <div>
         <Section title="Please leave feedback">
           <FeedbackOptions
             options={Object.keys(this.state)}
