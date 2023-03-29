@@ -13,10 +13,10 @@ export const Button = styled.button`
   justify-content: center;
   background-color: rgb(230, 193, 154);
   font-size: 24px;
+  border: none;
   border-radius: 4px;
   color: inherit;
-  outline: none;
-  border-bottom-right: 10px solid rgb(51, 58, 184)
+  box-shadow: 15px 13px 19px -8px rgba(29, 20, 9, 0.85);
   font-weight: bold;
   cursor: pointer;
   text-transform: capitalize;
@@ -26,7 +26,6 @@ export const Button = styled.button`
     background-color: rgb(100, 75, 48);
   }
   &:active {
-    
-    border-top-left: 10px solid rgb(51, 58, 184)
+    box-shadow: 5px 5px 19px -8px rgba(29, 20, 9, 0.95);
   }
 `;

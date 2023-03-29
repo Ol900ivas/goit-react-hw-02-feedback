@@ -1,8 +1,9 @@
 import { Component } from 'react';
-import { Section } from './Section/Section';
-import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
-import { Notification } from './Notification/Notification';
-import { Statistics } from './Statistics/Statistics';
+import { AppWrap } from './App.styled';
+import { Section } from '../Section/Section';
+import { FeedbackOptions } from '../FeedbackOptions/FeedbackOptions';
+import { Notification } from '../Notification/Notification';
+import { Statistics } from '../Statistics/Statistics';
 
 export class App extends Component {
   state = {
@@ -31,7 +32,7 @@ export class App extends Component {
   render() {
     const { good, neutral, bad } = this.state;
     return (
-      <div>
+      <AppWrap>
         <Section title="Please leave feedback">
           <FeedbackOptions
             options={Object.keys(this.state)}
@@ -51,7 +52,7 @@ export class App extends Component {
             />
           </Section>
         )}
-      </div>
+      </AppWrap>
     );
   }
 }
