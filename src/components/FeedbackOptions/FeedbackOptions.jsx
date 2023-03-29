@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { Button, FeedbackWrap } from './FeedbackOptions.styled.js';
+import { Button, FeedbackWrap } from './FeedbackOptions.styled';
 
 export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (

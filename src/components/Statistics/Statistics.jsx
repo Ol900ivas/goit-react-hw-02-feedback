@@ -1,9 +1,5 @@
 import PropTypes from 'prop-types';
-import {
-  StatisticsUl,
-  StatisticsLi,
-  StatisticsP,
-} from './Statistics.styled.js';
+import { StatisticsUl, StatisticsLi, StatisticsP } from './Statistics.styled';
 import { CgSmile, CgSmileNone, CgSmileSad } from 'react-icons/cg';
 
 export const Statistics = ({
